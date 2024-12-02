@@ -1,0 +1,74 @@
+{
+    "navItems": [
+        {
+            "title": "Presentación",
+            "url": "#presentacion"
+        },
+        {
+            "title": "Proyectos",
+            "url": "#proyectos"
+        },
+        {
+            "title": "Contacto",
+            "url": "#contacto"
+        }
+    ],
+    "presentacion": [
+        {
+            "nombre": "José María Martínez",
+            "trabajo": "Trabajo como operario de almacén para una empresa Multinacional NNZ AG.",
+            "descripcion": "Trabajo en una empresa de Logística como operario de almacén. He obtenido el curso superior de programación de páginas web a través de la academia de Master.D. Aquí he aprendido tecnologías como HTML, CSS, JAVASCRIPT, SQL, PHP. Mis próximos objetivos es poder trabajar en una empresa en desarrollo web y ampliar mis conocimientos, realizar un curso de inglés y mejorar mi alemán. En mi tiempo libre me gusta pasarlo con mi familia, practicar crossfit y senderismo.",
+            "linkedin": "https://www.linkedin.com/in/josé-maría-martínez-parra-24332ba4",
+            "github": "https://www.github.com",
+            "cvLink": "assets/Curriculum_Vitae_Jose_Maria_Martinez _2024.pdf"
+        }
+    ],
+    "proyectos": [
+        {
+            "nombre": "BLOG",
+            "descripcion": "Creación de un Blog para visualizar mi perfil, proyectos y contacto.",
+            "tecnologias": "HTML, CSS y Javascript",
+            "imagen": "vista1",
+            "linkGithub": ""
+        },
+        {
+            "nombre": "PÁGINA WEB CON TEMATICA ODONTOLOGICA",
+            "descripcion": "Creación de una página web con html, css y JavaScript con la tematica en servicio Odontologico, el proyecto consta con un menu de inicio, galería, presupuesto y contacto.",
+            "tecnologias": "HTML, CSS y Javascript",
+            "imagen": "vista2",
+            "linkGithub": "https://github.com/chemamp1981/Pag-na_Web_Odontologia_HTML_CSS_JAVASCRIPT.git"
+        },
+        {
+            "nombre": "PROYECTO PHP CON CONSULTAS CRUD.",
+            "descripcion": "Creación de una página web con html, css, JavaScript, php, Mysql con la tematica en servicio Odontologico. El proyecto esta dividido en tres partes en modo visitante, usuario y administrador. Utilizando consultas a una base de datos MySQL. Las consultas de creación, lectura, actualización y eliminación.",
+            "tecnologias": "HTML, CSS, Javascript, PHP, MySQL",
+            "imagen": "vista3",
+            "linkGithub": "https://github.com/chemamp1981/PROYECTO_PHP_CON_CONSULTAS_CRUD.git"
+        },
+        {
+            "nombre": "PÁGINA WEB ECOMERCE - (En Construcción)",
+            "descripcion": "Creación de una página web con html, css, JavaScript y bootstrap con la tematica Ecomerce para la venta textil infatil y calzado infantil",
+            "tecnologias": "HTML, CSS, Javascript y bootstrap",
+            "imagen": "vista4",
+            "linkGithub": ""
+        }
+    ],
+    "contacto":[
+        {
+            "etiqueta": "Nombre:",
+            "descripcion": "José María Martínez Parra"
+        },
+        {
+            "etiqueta": "Dirección",
+            "descripcion": "Im Westfeld 5 4055 Basel Stadt Schwizerland"
+        },
+        {
+            "etiqueta": "Teléfono(Whatsapp):",
+            "descripcion": "+41764072886"
+        },
+        {
+            "etiqueta": "Email:",
+            "descripcion": "chemamp1@gmail.com"
+        }
+    ]
+}

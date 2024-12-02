@@ -1,0 +1,250 @@
+
+/* ESTILOS COMUNES POR VARIABLES */
+
+:root {
+    --light-primary-color:  #0e8af0;
+    --dark-primary-color: purple;
+}
+
+
+body.light-theme{
+    --background-color: #0e8af0;
+    --a-link:  #fff;
+    --a-link-hover: var(--dark-primary-color);
+    --color-h2: var(--dark-primary-color);
+    --text-color: #fff;
+}
+
+
+body.dark-theme{
+    --background-color: #1e1e2e;
+    --a-link:  #fff;
+    --a-link-hover: var(--light-primary-color);
+    --color-h2: var(--light-primary-color);
+    --text-color: #fff;
+}
+
+
+/* GENERAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Seogoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--a-link);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+a:hover{
+    color: var(--a-link-hover);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.links-navbar {
+    display: flex;
+    gap: 50px;
+}
+
+.btn-cambiar-tema {
+    background-color: transparent;
+    border: none;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 100vh;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+section::before{
+    content: "";
+    display: block;
+    height: 100px;
+    margin-top: 0;
+    visibility: hidden;
+}
+
+.titulos {
+    color: var(--color-h2);
+    text-align: center;
+    font-size: 32px;
+}
+
+/* PRESENTACIÓN */
+
+.presentacion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.img-circular {
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.presentacion-container p {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.iconos {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.icono {
+    width: 40px;
+    height: auto;
+    transition: all .3s ease;
+}
+
+.icono:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* PROYECTOS */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+@media (max-width:1024px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+.proyectos-container {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 7px 10px 2px purple;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.proyectos-container:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 7px 10px 2px  #000;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #000, transparent);
+    width: 100%;
+    height: 70%;
+}
+
+.vista1{
+    background-image: url(../assets/proyectos/presentacionWeb.webp);
+}
+
+.vista2 {
+    background-image: url(../assets/proyectos/programadorWeb.webp);
+}
+
+.vista3 {
+    background-image: url(../assets/proyectos/php-2025.webp);
+}
+
+.vista4 {
+    background-image: url(../assets/proyectos/Bootstrap-5.webp);
+}
+
+.descripcion h3 {
+    font-weight: 500;
+}
+
+.descripcion p {
+    font-weight: 300;
+}
+
+.descripcion small {
+    font-style: italic;
+    color: greenyellow;
+}
+
+/* CONTACTO */
+.contacto-container{
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding: 10px;
+}
+.label-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+/* ICONO ARRIBA */
+
+.icono-top {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    height: 50px;
+    width: auto;
+    transition: all .3s ease;
+}
+
+.icono-top:hover {
+    transform: translateY(-5px);
+}

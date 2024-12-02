@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Proyecto</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>MI BLOG</h1>
+            <div class="links-navbar" id="links-navbar"></div>
+            <button class="btn-cambiar-tema" id="cambiar-tema">
+                <img class="icono" id="icono-dark" src="assets/moonIcono.svg"  alt="icono para el cambio de tema">
+                <img class="icono" id="icono-light" src="assets/sunIcono.svg"  alt="icono para el cambio de tema">
+            </button>
+        </nav>
+    </header>
+    <main>
+
+        <a href="#">
+            <img src="assets/arrowIcono.svg" alt="icono flecha" class="icono-top">
+        </a>
+        <section class="section" id="presentacion">
+            <h2 class="titulos">Presentación</h2>
+            <div class="presentacion-container" id="presentacion-container"></div>
+        </section>
+
+        <section class="section" id="proyectos">
+            <h2 class="titulos">Proyectos</h2>
+            <div class="grid-2" id="grid-2"></div>
+        </section>
+
+        <section class="section" id="contacto">
+            <h2 class="titulos">Contacto</h2>
+            <div class="contacto-container" id="contacto-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/presentacion.js"></script>
+    <script src="./js/proyectos.js"></script>
+    <script src="./js/contacto.js"></script>
+    <script src="./js/tema.js"></script>
+</body>
+
+</html>
