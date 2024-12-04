@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on [OR]
+RewriteCond %{HTTP_HOST} !^www.luna.infinityfreeapp.com$ [NC]
+RewriteRule ^(.*)$ https://www.luna.infinityfreeapp.com/$1 [L,R=301]
