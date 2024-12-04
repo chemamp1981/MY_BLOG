@@ -11,7 +11,7 @@ fetch('./assets/data/datos.json')
                         <div class="descripcion">
                             <h3>${item.nombre}</h3>
                             <p>${item.descripcion}</p>
-                            small>${item.tecnologias}</small>
+                            <small>${item.tecnologias}</small>
                         </div>
                     </div>
                 </a>
